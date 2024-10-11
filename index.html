@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="gear-solid.svg">
+    <title>Filip Wróbel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb229d1bef.js" crossorigin="anonymous"></script>
+</head>
+<script src="main.js"></script>
+<script>
+    // Funkcja, która dodaje cień po scrollu
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 50) { // Dodanie cienia, gdy scroll jest większy niż 50px
+            header.classList.add('shadow');
+        } else {
+            header.classList.remove('shadow');
+        }
+    });
+</script>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><span>Filip</span> Wróbel</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><span><a href="#home">Home</a></span></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <h3>Hello, I'm</h3>
+                    <h1>Filip Wróbel</h1>
+                    <h4>And I am Progammist</h4>
+                    <p>Hi! I am Filip Wróbel, a passionate front-end developer specializing
+                        in translating design concepts into seamless and interactive web
+                        experiences using HTML and CSS.
+                    </p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="btn">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img src="img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-warpper">
+                    <div class="about-left">
+                        <div class="about-img">
+                            <img src="img.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="about-right">
+                        <div class="about-info">
+                            <h2>About <span>Me</span></h2>
+                            <h3>Front-End Developer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Modi aliquam veniam labore
+                                magnam optio non praesentium, odio sequi repellendus
+                                in blanditiis, vitae voluptatem
+                                nulla maiores ea sit natus tenetur incidunt!
+                            </p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="services" class="services">
+        <div class="cotaniner">
+            <h2>Our <span>Services</span></h2>
+            <div class="services-box">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web development</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                        dolorum alias enim impedit earum
+                        ea error labore obcaecati, pariatur incidunt ipsam autem quis,
+                        odio culpa tempora dolorem, minus
+                        quasi? Dolorum.
+                    </p>
+                    <div class="services-btn">
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-pen-fancy"></i>
+                    </div>
+                    <h3>Graphic design</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                        dolorum alias enim impedit earum
+                        ea error labore obcaecati, pariatur incidunt ipsam autem quis,
+                        odio culpa tempora dolorem, minus
+                        quasi? Dolorum.
+                    </p>
+                    <div class="services-btn">
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                        dolorum alias enim impedit earum
+                        ea error labore obcaecati, pariatur incidunt ipsam autem quis,
+                        odio culpa tempora dolorem, minus
+                        quasi? Dolorum.
+                    </p>
+                    <div class="services-btn">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="cotaniner">
+            <h2>Latest <span>Projects</span></h2>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-box">
+                    <img src="project1.img" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur nulla, minima cum et
+                            quisquam! Veritatis laudantium deserunt dicta veniam hic error modi eos nihil molestias,
+                            porro rem maxime vitae!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="project1.img" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur nulla, minima cum et
+                            quisquam! Veritatis laudantium deserunt dicta veniam hic error modi eos nihil molestias,
+                            porro rem maxime vitae!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="project1.img" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur nulla, minima cum et
+                            quisquam! Veritatis laudantium deserunt dicta veniam hic error modi eos nihil molestias,
+                            porro rem maxime vitae!</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="cotaniner">
+            <h2>Contact <span>Me</span></h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Adress">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="cotaniner">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <p>Copyright &copy; 2024 by Filip Wróbel | All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
